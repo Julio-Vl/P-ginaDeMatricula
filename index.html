@@ -14,10 +14,82 @@
 <body>
   <div id="app">
     <main>
-      <div class="main-container">Lorem ipsum dolor sit amet consectetur adipisicing elit. Perspiciatis repellat quidem temporibus eaque aliquam provident obcaecati amet eos, qui dolorem neque quas, porro molestiae ut velit exercitationem necessitatibus modi officia!</div>
+      <div class="main-container">
+        <div>
+          <div class="back"></div>
+          <img src="icons/arrow-left-02.svg" alt="Icone de voltar.">
+          <span>Voltar</span>
+        </div>
+        <h1>Formulário de Matrícula</h1>
+        <p>Preencha os dados abaixo para matricular seu filho na escola de educação infantil Estrelas do Amanhã.</p>
+        <form method="post" enctype="multipart/form-data">
+          <fieldset class="child-info">
+            <legend>Informações da criança</legend>
+
+            <div class="input-wrapper">
+              <label for="fullname">Nome completo</label>
+              <input 
+              id="fullname" 
+              type="text"
+              name="fullname"
+              placeholder="Qual o nome da criança?">
+            </div>
+
+            <div class="input-wrapper">
+              <label for="birth">Data de nascimento</label>
+              <input id="birth"
+              type="date" 
+              name="birth" 
+              lang="pt-Br">
+            </div>
+
+            <div class="select-wrapper">
+              <label for="gender">Sexo</label>
+              <select name="gender" id="gender">
+                <option value="famale">feminino</option>
+                <option value="male">Masculino</option>
+                <option value="na">Prefiro não responder</option>
+              </select>
+
+              <div class="textarea-wrapper">
+                <label for="medical-info">Informações médicas</label>
+                <textarea 
+                name="medical-info" 
+                id="medical-info"
+                cols="30"
+                rows="10"
+                placeholder="A criança possui alguma condição medica que a escola deva estar ciente? (Se sim, especifique) "
+                ></textarea>
+              </div>
+
+              <div class="droparea-wrapper">
+                <input type="file" 
+                id="birth-file" 
+                name="birth-file"
+                >
+                <img src="icons/cloud-upload.svg" alt="">
+                <p>Cliue aqui para <br> selecionar os arquivos</p>
+              </div>
+
+            </div>
+          </fieldset>
+        </form>
+      </div>
     </main>
     <aside>
-      <div class="aside-container">Lorem, ipsum dolor sit amet consectetur adipisicing elit. Impedit quam quaerat, voluptatum molestiae modi suscipit vitae reprehenderit corporis non, ratione eaque quos aliquid quo amet omnis dolor quae quis? Quibusdam?</div>
+      <div class="aside-container">
+        <header>
+          <img src="icons/logo.svg" alt="Logo Estrelas do Amanhã">
+          <h2>Porque cada momento de
+            <span>
+                aprendizado
+            </span>
+            conta
+          </h2>
+          <p>Inscreva seu filho em nossa escola e veja-o florescer em um ambiente acolhedor, seguro e estimulante.</p>
+        </header>
+        <img src="icons/Illustration.svg" alt="ilustração de uma professora com crianças prestando atenção">
+      </div>
     </aside>
   </div>
 </body>
