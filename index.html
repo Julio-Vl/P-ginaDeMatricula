@@ -6,7 +6,7 @@
   <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
 
   <meta charset="UTF-8">
-  <meta name="viewport" content="width=	, initial-scale=1.0">
+ <meta name="viewport" content="width=device-width, initial-scale=1.0">
   <title>Estrelas do Amanhã</title>
 
   <link rel="stylesheet" href="styles/index.css">
@@ -69,7 +69,7 @@
                   </svg>
 
 
-                  <p>Cliue aqui para <br> selecionar os arquivos</p>
+                  <p>Clique aqui para <br> selecionar os arquivos</p>
                 </div>
               </div>
             </div>
@@ -107,6 +107,31 @@
                 <input type="text" id="state" name="state" disabled>
               </div>
             </div>
+          </fieldset>
+
+          <fieldset class="gardian">
+            <legend>Informações do responsável</legend>
+
+            <div class="input-wrapper">
+              <label for="gardian">Nome do responsável</label>
+              <input type="text" id="gardian" name="gardian">
+              <small>Principal responsável legal e contato de emergência</small>
+            </div>
+            <div class="input-wrapper">
+              <label for="phone">Telefone</label>
+              <input type="tel" id="phone" name="phone" placeholder="(31) 9 9999-9999">
+            </div>
+
+
+            <div class="input-wrapper">
+              <label for="mail">Email</label>
+              <input type="email" name="mail" id="mail" required>
+              <div class="error">
+                <img src="icons/alert-circle.svg" alt="ícone de alerta vermelho">
+                <span>Insira um e-mail válido</span>
+              </div>
+            </div>
+
           </fieldset>
 
         </form>
